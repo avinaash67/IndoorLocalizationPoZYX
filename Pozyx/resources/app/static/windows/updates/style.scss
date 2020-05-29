@@ -1,0 +1,77 @@
+$progress-bar-background-color: rgba(255,255,255, 0.1);
+$progress-value-background-color: rgba(255,255,255, 0.9);
+
+$blue: #3DA3DC;
+$primary: #3DA3DC;
+$primary-invert: white;
+$notification-padding: 1rem 1.25rem;
+
+@import "node_modules/bulma/sass/utilities/initial-variables.sass";
+@import "node_modules/buefy/src/scss/utils/_all.scss";
+@import "node_modules/bulma/bulma.sass";
+@import "node_modules/buefy/src/scss/buefy.scss";
+
+html, body {
+  overflow: hidden !important;
+}
+
+html, body {
+  overflow: hidden !important;
+  height: 100vh;
+  background: #3da3dc;
+  background: linear-gradient(45deg, #3da3dc 0%, #143a56 100%);
+}
+
+#slidingbackground {
+  z-index: 0;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(45deg, #143a56 0%, #3da3dc 100%);
+  animation: slidingbackground 8s infinite alternate ease;
+}
+
+#app {
+  z-index: 1;
+}
+
+.breath {
+  animation: breath 1s infinite alternate ease;
+}
+
+@keyframes breath {
+  0% {
+    opacity: 0.2;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slidingbackground {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.button.is-ghost {
+  color: white;
+  background: none;
+
+  &:hover, &:active {
+    border-color: white;
+    color: white;
+  }
+}
+
+progress {
+  height: 0.4rem !important;
+  margin-bottom: 1rem !important;
+}

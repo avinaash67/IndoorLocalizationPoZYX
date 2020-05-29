@@ -1,0 +1,13 @@
+$blue: #3DA3DC;
+$primary: #3DA3DC;
+$primary-invert: white;
+$notification-padding: 1rem 1.25rem;
+
+@import "node_modules/bulma/sass/utilities/initial-variables.sass";
+@import "node_modules/buefy/src/scss/utils/_all.scss";
+@import "node_modules/bulma/bulma.sass";
+@import "node_modules/buefy/src/scss/buefy.scss";
+
+html, body {
+  overflow: hidden !important;
+}

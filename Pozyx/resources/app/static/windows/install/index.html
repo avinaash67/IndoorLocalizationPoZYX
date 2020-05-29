@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Install software</title>
+    <style>
+      p {
+          color: #154756;
+          font-size: 16;
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+      }
+
+      div.error {
+        visibility: hidden;
+      }
+
+      div.info {
+        visibility: visible;
+      }
+
+      #myProgress {
+        width: 100%;
+        background-color: grey;
+      }
+      #myBar {
+        width: 0%;
+        height: 30px;
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="padding-bottom: 5px">
+
+      <button onclick="downloadCore()" >
+        Download core
+      </button>
+      <button onclick="downloadLibrary()" >
+        Download library
+      </button>
+      <p id='installLocation'>
+        Install location:
+      </p>
+      <button onclick="selectInstallFolder()" >
+        Change...
+      </button>
+      <button onclick="resetInstallFolder()" >
+        Reset
+      </button>
+    </div>
+
+
+    <div id="myProgress">
+      <div id="myBar"></div>
+    </div>
+
+    <div>
+      <p>Already installed? <a onclick="selectDirectory()">Select location...</a></p>
+    </div>
+
+  </body>
+
+  <script src="./main.js" charset="utf-8"></script>
+</html>
