@@ -8,4 +8,5 @@ Indoor localization using Pozyx tags.
 2. The obtained data is then filtered using Octave.
 
 	2.1. Kalman filter
+	
 	2.2. FIR filter
