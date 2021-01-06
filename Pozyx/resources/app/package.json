@@ -17,7 +17,7 @@
     "push-to-s3": "aws s3 cp ./out/make/Pozyx-0.1.0.dmg s3://tray.cloud.pozyxlabs.com/Pozyx.dmg ; aws s3 cp ./out/make/Pozyx_0.1.0_amd64.deb s3://tray.cloud.pozyxlabs.com/Pozyx.deb ; aws s3 cp ./out/make/squirrel.windows/x64/Pozyx-0.1.0\\ Setup.exe s3://tray.cloud.pozyxlabs.com/Pozyx.exe"
   },
   "dependencies": {
-    "axios": "^0.17.1",
+    "axios": "^0.21.1",
     "buefy": "^0.6.5",
     "bulma": "^0.6.2",
     "crypto-js": "^3.1.9-1",
